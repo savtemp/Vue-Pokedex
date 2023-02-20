@@ -1,15 +1,27 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <div class="home-card p-5 bg-white rounded elevation-3">
-      <img
-        src="https://bcw.blob.core.windows.net/public/img/8600856373152463"
-        alt="CodeWorks Logo"
-        class="rounded-circle"
-      >
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
-      </h1>
+  <div class="row m-4">
+
+    <!-- SECTION LEFT SIDE POKE-API POKEMON LIST -->
+    <div class="col-md-3 text-center p-2">
+      <button class="btn btn-primary w-75">Wild Pokemon</button>
     </div>
+  
+    <!-- SECTION ACTIVE POKEMON -->
+    <div class="col-md-6">
+      <div class="row justify-content-center">
+        <div class="col-md-9">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9rZW1vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="">
+          <p><b>Pokemon Name</b></p>
+          <p>Pokemon Abilities:</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- SECTION SANDBOX POKEMON -->
+    <div class="col-md-3 text-center p-2">
+      <button class="btn btn-primary w-75">Caught Pokemon</button>
+    </div>
+
   </div>
 </template>
 
