@@ -10,5 +10,8 @@ export const AppState = reactive({
   /** @type {import('./models/WildPokemon').WildPokemon} */
   wildPokemons: [],
 
-  activePokemon: null
+  activePokemon: null,
+
+  nextPage: null,
+  previousPage: null
 })

@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <!-- <header>
     <Navbar />
-  </header>
+  </header> -->
 
   <main class="container-fluid">
     <router-view />
