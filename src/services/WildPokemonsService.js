@@ -17,6 +17,8 @@ class WildPokemonsService{
     // logger.log('[WILD POKEMON IN THE APPSTATE]', AppState.wildPokemons)
   }
 
+  // NOTE in both functions below we can just all to the regular API because the data is already stored in our AppState
+
   async setActivePokemon(url){
     const res = await api.get(url)
     // logger.log('[SETTING ACTIVE POKEMON]', res.data)

@@ -14,6 +14,7 @@
     </div>
   
     <!-- SECTION ACTIVE POKEMON -->
+    <!-- NOTE you could make this a component and bring in props later -->
     <div class="col-md-7">
       <div class="row justify-content-center mt-5">
         <div class="col-md-9" v-if="activePokemon">
@@ -42,6 +43,7 @@ import { computed } from '@vue/reactivity';
 
 export default {
   setup() {
+    // NOTE getAll will go in setUp as an invisible function
     async function getAllPokemon(){
       try {
         await wildPokemonsService.getAllPokemon()
@@ -53,11 +55,13 @@ export default {
     }
 
 
+    // NOTE this will go onMounted because it will load up with page load, and will load changes 
     onMounted(() => {
       getAllPokemon()
     })
 
 
+    // NOTE bringing in our AppState data and functions that users will interact with
     return {
       wildPokemon: computed(() => AppState.wildPokemons),
       activePokemon: computed(() => AppState.activePokemon),
